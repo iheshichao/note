@@ -1,6 +1,6 @@
 ```
 1. 首先创建centos容器，用于安装mysql，建议使用以下方式创建否则会在启动mysql时遇到：Failed to get D-Bus connection: Operation not permitted 的问题
-   docker run -d -e "container=docker" --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup --name centos7 centos /usr/sbin/init 
+   docker run -d -e "container=docker" --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup --name c-name -p port:port image /usr/sbin/init 
    
 2. 安装mysql源
    下载mysql源
